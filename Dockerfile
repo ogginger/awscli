@@ -8,5 +8,7 @@ unzip
 run curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "/root/awscliv2.zip" && \
 unzip /root/awscliv2.zip -d /root/ && /root/aws/install
 
-workdir /home
+run mkdir /home/project
+volume ["/home/project"]
+workdir /home/project
 

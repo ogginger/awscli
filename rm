@@ -1,0 +1,4 @@
+#!/bin/bash
+
+docker stop aws
+docker rm aws
